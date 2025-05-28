@@ -1,12 +1,12 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: var(--brand-primary);
+  font-size: 14px;
 }
 
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  padding: 40px 24px 0;
 }
 
 footer .footer p {
@@ -15,6 +15,97 @@ footer .footer p {
 
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 40px 32px 0;
+  }
+}
+
+
+/* section one */
+footer .section:first-of-type .default-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+footer .section:first-of-type .default-content-wrapper ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer .section:first-of-type .default-content-wrapper > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+}
+
+footer .section:first-of-type a.button.primary .icon {
+  width: 10px;
+  height: auto;
+}
+
+footer .section:first-of-type a.button.primary img {
+  filter: invert(1);
+}
+
+footer .section:first-of-type .default-content-wrapper > ul > li > p {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+footer .section:first-of-type .default-content-wrapper > ul > li > ul > li {
+  padding: 4px 0;
+  color: #000;
+}
+
+footer .section:first-of-type .default-content-wrapper > ul > li > ul > li a {
+  color: inherit;
+}
+
+@media (width >= 900px) {
+  footer .section:first-of-type .default-content-wrapper {
+    flex-direction: row;
+    padding-bottom: 12rem;
+  }
+
+  footer .section:first-of-type .default-content-wrapper > ul {
+      gap: 8rem;
+  }
+}
+
+
+/* section two */
+footer .section:nth-of-type(2) {
+  border-top: 1px solid #ededed;
+  padding: 1.5rem 0;
+}
+
+footer .section:nth-of-type(2) .default-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+footer .section:nth-of-type(2) .default-content-wrapper > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer .section:nth-of-type(2) .default-content-wrapper > ul > li a {
+  color: inherit;
+}
+
+@media (width >= 900px) {
+footer .section:nth-of-type(2) .default-content-wrapper {
+      flex-direction: row;
   }
 }

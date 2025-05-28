@@ -12,6 +12,8 @@
 
 :root {
   /* colors */
+  --brand-primary: rgb(249, 247, 243);
+  --brand-secondary: rgb(225 222 215);
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
@@ -73,7 +75,7 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--brand-primary);
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
@@ -189,6 +191,16 @@ button {
   white-space: nowrap;
 }
 
+a.button.primary {
+  border-radius: 5px;
+  background-color: #000;
+  padding: 0.25rem 0.5rem;
+}
+
+a.button.primary:hover {
+  background-color: #ccc;
+}
+
 a.button:hover,
 a.button:focus,
 button:hover,
@@ -205,9 +217,9 @@ button:disabled:hover {
 
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  border-radius: 5px;
+  background-color: var(--background-color);
+  padding: 0.25rem 0.5rem;
 }
 
 main img {

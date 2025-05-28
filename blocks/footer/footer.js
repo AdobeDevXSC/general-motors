@@ -16,5 +16,20 @@ export default async function decorate(block) {
   const footer = document.createElement('div');
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
+
+  // decorate section one
+  const sectionOne = footer.querySelector('.section:first-of-type .default-content-wrapper');
+  const contentWrapper = document.createElement('div');
+  contentWrapper.className = 'content-wrapper';
+
+  for (const child of [...sectionOne.children]) {
+    if (child.tagName === 'UL') break;
+    if (child.tagName === 'P') contentWrapper.appendChild(child);
+  }
+
+  if (contentWrapper.children.length) {
+    sectionOne.insertBefore(contentWrapper, sectionOne.querySelector('ul'));
+  }
+
   block.append(footer);
 }
