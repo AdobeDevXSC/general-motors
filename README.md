@@ -1,5 +1,9 @@
 # General Motors (GM)
-- A door opener site built using AEM Universal Editor (UE) for GM. 
+- A door opener site built using AEM Universal Editor (UE) for GM.
+
+- Mock up provided by GM team
+  ![image](https://github.com/user-attachments/assets/0a342507-e47c-4323-99e0-d2fe1a65bb5f)
+
 
 ## Environments
 - Preview: https://main--general-motors--adobedevxsc.aem.page/
