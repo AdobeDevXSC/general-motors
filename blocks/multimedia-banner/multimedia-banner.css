@@ -15,35 +15,33 @@
 /* default */
 .multimedia-banner .information {
   position: absolute;
-  top: 0;
-  left: 0;
   padding: 2rem;
 }
 
 /* extensions */
-.multimedia-banner .information.top-left {
+.multimedia-banner.top-left .information {
   top: 0;
   left: 0;
 }
-.multimedia-banner .information.middle-left {
+.multimedia-banner.middle-left .information {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
-.multimedia-banner .information.bottom-left {
+.multimedia-banner.bottom-left .information {
   bottom: 0;
   left: 0;
 }
-.multimedia-banner .information.top-right {
+.multimedia-banner.top-right .information {
   top: 0;
   right: 0;
 }
-.multimedia-banner .information.middle-right {
+.multimedia-banner.middle-right .information {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
 }
-.multimedia-banner .information.bottom-right {
+.multimedia-banner.bottom-right .information {
   bottom: 0;
   right: 0;
 }
