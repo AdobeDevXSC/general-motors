@@ -235,32 +235,49 @@
       {
         "component": "select",
         "name": "classes",
-        "value": "align-top-left",
-        "label": "Text Alignment",
+        "label": "Style",
         "options": [
           {
-            "name": "Align Top Left",
-            "value": "align-top-left"
+            "name": "Alignment",
+            "children": [
+              {
+                "name": "Align Top Left",
+                "value": "align-top-left"
+              },
+              {
+                "name": "Align Middle Left",
+                "value": "align-middle-left"
+              },
+              {
+                "name": "Align Bottom Left",
+                "value": "align-bottom-left"
+              },
+              {
+                "name": "Align Top Right",
+                "value": "align-top-right"
+              },
+              {
+                "name": "Align Middle Right",
+                "value": "align-middle-right"
+              },
+              {
+                "name": "Align Bottom Right",
+                "value": "align-bottom-right"
+              }
+            ]
           },
           {
-            "name": "Align Middle Left",
-            "value": "align-middle-left"
-          },
-          {
-            "name": "Align Bottom Left",
-            "value": "align-bottom-left"
-          },
-          {
-            "name": "Align Top Right",
-            "value": "align-top-right"
-          },
-          {
-            "name": "Align Middle Right",
-            "value": "align-middle-right"
-          },
-          {
-            "name": "Align Bottom Right",
-            "value": "align-bottom-right"
+            "name": "Text Color",
+            "children": [
+              {
+                "name": "white",
+                "value": "text-white"
+              },
+              {
+                "name": "black",
+                "value": "text-black"
+              }
+            ]
           }
         ]
       },
