@@ -21,32 +21,41 @@
 }
 
 /* extensions */
-.multimedia-banner .information.align-top-left {
+.multimedia-banner .information.top-left {
   top: 0;
   left: 0;
 }
-.multimedia-banner .information.align-middle-left {
+.multimedia-banner .information.middle-left {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
-.multimedia-banner .information.align-bottom-left {
+.multimedia-banner .information.bottom-left {
   bottom: 0;
   left: 0;
 }
-.multimedia-banner .information.align-top-right {
+.multimedia-banner .information.top-right {
   top: 0;
   right: 0;
 }
-.multimedia-banner .information.align-middle-right {
+.multimedia-banner .information.middle-right {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
 }
-.multimedia-banner .information.align-bottom-right {
+.multimedia-banner .information.bottom-right {
   bottom: 0;
   right: 0;
 }
+
+/* text color */
+.multimedia-banner.text-white {
+  color: #fff;
+}
+.multimedia-banner.text-black {
+  color: #000;
+}
+
 
 
 @media (width >= 900px) {

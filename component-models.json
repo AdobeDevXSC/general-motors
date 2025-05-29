@@ -242,28 +242,28 @@
             "name": "Alignment",
             "children": [
               {
-                "name": "Align Top Left",
-                "value": "align-top-left"
+                "name": "Top Left",
+                "value": "top-left"
               },
               {
-                "name": "Align Middle Left",
-                "value": "align-middle-left"
+                "name": "Middle Left",
+                "value": "middle-left"
               },
               {
-                "name": "Align Bottom Left",
-                "value": "align-bottom-left"
+                "name": "Bottom Left",
+                "value": "bottom-left"
               },
               {
-                "name": "Align Top Right",
-                "value": "align-top-right"
+                "name": "Top Right",
+                "value": "top-right"
               },
               {
-                "name": "Align Middle Right",
-                "value": "align-middle-right"
+                "name": "Middle Right",
+                "value": "middle-right"
               },
               {
-                "name": "Align Bottom Right",
-                "value": "align-bottom-right"
+                "name": "Bottom Right",
+                "value": "bottom-right"
               }
             ]
           },

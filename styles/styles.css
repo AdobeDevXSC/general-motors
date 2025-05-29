@@ -78,7 +78,7 @@ body {
   background-color: var(--brand-primary);
   color: var(--text-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   line-height: 1.6;
 }
 
@@ -225,6 +225,7 @@ button.secondary {
   border-radius: 5px;
   background-color: var(--background-color);
   padding: 0.25rem 0.5rem;
+  color: #000;
 }
 
 main img {
