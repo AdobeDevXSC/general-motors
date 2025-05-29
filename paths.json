@@ -3,7 +3,7 @@
     "/content/general-motors/:/",
     "/content/general-motors/configuration:/.helix/config.json",
     "/content/general-motors/metadata:/metadata.json",
-    "/content/dam/general-motors/video/:/video/"
+    "/content/dam/general-motors/video/:/video/",
   ],
   "includes": [
     "/content/general-motors/",
