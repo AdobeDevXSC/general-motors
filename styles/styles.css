@@ -122,7 +122,11 @@ h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
-p,
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 dl,
 ol,
 ul,
@@ -267,4 +271,12 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.text-white {
+  color: #fff;
+}
+
+main .section.text-black {
+  color: #000;
 }
