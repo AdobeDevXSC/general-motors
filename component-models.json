@@ -266,7 +266,7 @@
       },
       {
         "component": "select",
-        "name": "classes",
+        "name": "Text Color",
         "value": "text-black",
         "label": "Text Color",
         "options": [
