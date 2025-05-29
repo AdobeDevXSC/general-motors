@@ -22,8 +22,8 @@
   --link-hover-color: #1d3ecf;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: Buick-Text, roboto-fallback, sans-serif;
+  --heading-font-family: Buick-Headline, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -88,6 +88,7 @@ body.appear {
 
 header {
   height: var(--nav-height);
+  background-color: var(--brand-primary);
 }
 
 header .header,
