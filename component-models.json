@@ -216,13 +216,13 @@
     ]
   },
   {
-    "id": "video-banner",
+    "id": "multimedia-banner",
     "fields": [
       {
         "component": "reference",
         "valueType": "string",
-        "name": "video",
-        "label": "Video",
+        "name": "media",
+        "label": "Media (Video or Image)",
         "multi": false
       },
       {
