@@ -233,8 +233,9 @@
         "valueType": "string"
       },
       {
-        "component": "select",
+        "component": "multiselect",
         "name": "classes",
+        "value": "align-top-left",
         "label": "Style",
         "options": [
           {
@@ -278,22 +279,6 @@
                 "value": "text-black"
               }
             ]
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "Text Color",
-        "value": "text-black",
-        "label": "Text Color",
-        "options": [
-          {
-            "name": "white",
-            "value": "text-white"
-          },
-          {
-            "name": "black",
-            "value": "text-black"
           }
         ]
       }
