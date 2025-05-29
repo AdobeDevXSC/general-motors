@@ -6,9 +6,6 @@ export default async function decorate(block) {
   mediaContainer?.classList.add('media-container');
   infoContainer?.classList.add('information');
 
-      infoContainer?.classList.add('align-top-left');
-
-
   // Check for media type
   const videoLink = mediaContainer.querySelector('a');
 
