@@ -158,13 +158,13 @@ button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: #000;
   text-decoration: none;
   overflow-wrap: break-word;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: #000;
   text-decoration: underline;
 }
 
