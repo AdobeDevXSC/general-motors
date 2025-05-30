@@ -12,6 +12,10 @@ import {
   loadCSS,
 } from './aem.js';
 
+export function isAuthorEnvironment() {
+  return document.querySelector('*[data-aue-resource]') !== null;
+}
+
 export function makeVideo(element, href) {
   // Set up the video and its source
   element.innerHTML = `
