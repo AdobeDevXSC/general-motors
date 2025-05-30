@@ -43,28 +43,40 @@
 .multimedia-banner.top-left .information {
   top: 0;
   left: 0;
+  right: unset;
+  bottom: unset;
 }
 .multimedia-banner.middle-left .information {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  right: unset;
+  bottom: unset;
 }
 .multimedia-banner.bottom-left .information {
   bottom: 0;
   left: 0;
+  top: unset;
+  right: unset;
 }
 .multimedia-banner.top-right .information {
   top: 0;
   right: 0;
+  bottom: unset;
+  left: unset;
 }
 .multimedia-banner.middle-right .information {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  bottom: unset;
+  left: unset;
 }
 .multimedia-banner.bottom-right .information {
   bottom: 0;
   right: 0;
+  top: unset;
+  left: unset;
 }
 
 /* text color */
