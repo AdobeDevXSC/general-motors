@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.multimedia-banner video {
+.multimedia-banner img {
   width: 100%;
   max-height: 750px;
   object-fit: cover;
@@ -10,6 +10,25 @@
 
 .multimedia-banner .play-pause-button {
   display: none;
+}
+
+.multimedia-banner .media-container video,
+.multimedia-banner .media-container img {
+  width: 100%;
+  max-height: 750px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.multimedia-banner .buttons-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.multimedia-banner .buttons-wrapper a,
+.multimedia-banner .buttons-wrapper p {
+  margin: 0;
 }
 
 /* default */

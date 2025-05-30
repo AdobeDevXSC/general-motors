@@ -13,5 +13,18 @@ export default async function decorate(block) {
     // Handle video
     makeVideo(mediaContainer, videoLink.href);
     videoLink.remove();
-  } 
+  }
+
+  // Group button containers into a wrapper
+  const buttonContainers = infoContainer.querySelectorAll('p.button-container');
+  if (buttonContainers.length > 0) {
+    const buttonsWrapper = document.createElement('div');
+    buttonsWrapper.classList.add('buttons-wrapper');
+    
+    buttonContainers.forEach(buttonContainer => {
+      buttonsWrapper.appendChild(buttonContainer);
+    });
+    
+    infoContainer.appendChild(buttonsWrapper);
+  }
 }
