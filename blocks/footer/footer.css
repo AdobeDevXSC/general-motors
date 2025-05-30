@@ -52,7 +52,7 @@ footer .section:first-of-type a.button.primary img {
 }
 
 footer .section:first-of-type .default-content-wrapper > ul > li > p {
-  color: grey;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 

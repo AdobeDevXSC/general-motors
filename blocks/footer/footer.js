@@ -31,5 +31,10 @@ export default async function decorate(block) {
     sectionOne.insertBefore(contentWrapper, sectionOne.querySelector('ul'));
   }
 
+  // Update title attribute for all links to improve LHS
+  const link = footer.querySelector('.section:first-of-type .button-container a');
+  const href = link?.href;
+  link.setAttribute('title', href);
+  
   block.append(footer);
 }
