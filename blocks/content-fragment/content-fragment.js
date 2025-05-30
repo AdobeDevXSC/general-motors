@@ -55,7 +55,7 @@ export default async function decorate(block) {
           <a class='button primary' href='${cfReq?.ctaUrl}' target='_blank'>${cfReq?.ctaLabel}</a>
         </p>
     </div>
-    <div class='card-body-image'>
+    <div data-aue-prop='image' data-aue-label='image' data-aue-type='image' class='card-body-image'>
         <img src='${cfReq?.image?._publishUrl}' title='${cfReq?.title}'/>
     </div>
   </div>
