@@ -87,8 +87,15 @@
   color: #000;
 }
 
-
-
-@media (width >= 900px) {
-
+@media (width <= 768px) {
+  .multimedia-banner .information {
+    top: 0 !important;
+    left: 0 !important;
+    right: unset !important;
+    bottom: unset !important;
+    padding: 1rem;
+  }
+  .multimedia-banner .information * {
+    font-size: 18px;
+  }
 }
