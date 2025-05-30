@@ -1,32 +1,46 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+.columns .column {
+  order: 1;
+  background-color: var(--brand-secondary);
+  border-radius: 13px;
+  padding: 1rem 0 1rem 1rem;
+  box-sizing: border-box;
+}
+
+.columns .column:hover {
+  outline: 1.5px solid #000;
+}
+
+.columns .column:hover a {
+  text-decoration: none;
+}
+
+.columns .column img {
+  max-height: 525px;
+  object-fit: cover;
+}
+
+.columns p {
+  margin: 0;
 }
 
 .columns img {
   width: 100%;
 }
 
-.columns > div > div {
-  order: 1;
-}
-
-.columns > div > .columns-img-col {
-  order: 0;
-}
-
-.columns > div > .columns-img-col img {
-  display: block;
-}
-
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 24px;
+    gap: 1rem;
   }
 
-  .columns > div > div {
+  .columns .column {
     flex: 1;
     order: unset;
   }

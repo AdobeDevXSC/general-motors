@@ -13,7 +13,7 @@
 :root {
   /* colors */
   --brand-primary: rgb(249, 247, 243);
-  --brand-secondary: rgb(225 222 215);
+  --brand-secondary: rgb(234 232 228);
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
@@ -107,7 +107,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
+  margin-top: 0.25em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
   font-weight: 600;
@@ -210,7 +210,6 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
   cursor: pointer;
 }
 
@@ -247,13 +246,13 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 5px 0;
 }
 
 main > .section > div {
   max-width: 1480px;
   margin: auto;
-  padding: 0 24px;
+  padding: 0 15px;
 }
 
 main > .section:first-of-type {

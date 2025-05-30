@@ -1,18 +1,19 @@
+
 export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-${cols.length}-cols`);
 
-  // setup image columns
-  [...block.children].forEach((row) => {
-    [...row.children].forEach((col) => {
-      const pic = col.querySelector('picture');
-      if (pic) {
-        const picWrapper = pic.closest('div');
-        if (picWrapper && picWrapper.children.length === 1) {
-          // picture is only content in column
-          picWrapper.classList.add('columns-img-col');
-        }
-      }
-    });
+  block.querySelectorAll(':scope > div > div').forEach((col) => {
+    col.classList.add('column');
+    const button = col.querySelector('.button-container a');
+    if (!button) return;
+
+    const anchor = document.createElement('a');
+    anchor.href = button.href;
+    anchor.className = 'column-link';
+    
+    button.closest('.button-container')?.remove();
+    anchor.append(...col.childNodes);
+    col.append(anchor);
   });
 }
