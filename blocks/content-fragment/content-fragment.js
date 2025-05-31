@@ -45,18 +45,21 @@ export default async function decorate(block) {
   block.innerHTML = `
   <div class='block' data-aue-resource=${itemId} data-aue-label='teaser-content-fragment' data-aue-type='reference' data-aue-filter='cf'>
 		<div class='card-body-content'>
-        <h4 data-aue-prop='title' data-aue-label='title' data-aue-type='text' class='heading'>${
+        <p data-aue-prop='pre-title' data-aue-label='Pre-Title' data-aue-type='text' class='pretitle'>${
+          cfReq?.pretitle
+        }</p>
+        <h2 data-aue-prop='title' data-aue-label='Title' data-aue-type='text' class='title'>${
           cfReq?.title
-        }</h4>
-        <p data-aue-prop='description' data-aue-label='description' data-aue-type='richtext' class='description'>${
+        }</h2>
+        <p data-aue-prop='description' data-aue-label='Description' data-aue-type='richtext' class='description'>${
           cfReq?.description?.plaintext
         }</p>
-        <p data-aue-prop='cta' data-aue-label='cta' data-aue-type='text' class='cta-link'>
-          <a class='button primary' href='${cfReq?.ctaUrl}' target='_blank'>${cfReq?.ctaLabel}</a>
+        <div data-aue-prop='image' data-aue-label='Image' data-aue-type='richtext' class='card-body-image'>
+          <img src='${cfReq?.image?._publishUrl}' title='${cfReq?.title}'/>
+        </div>
+        <p data-aue-prop='cta' data-aue-label='CTA' data-aue-type='text' class='cta-link'>
+          <a class='button' href='${cfReq?.ctaUrl}' target='_blank'>${cfReq?.ctaLabel} &#8594;</a>
         </p>
-    </div>
-    <div data-aue-prop='image' data-aue-label='image' data-aue-type='image' class='card-body-image'>
-        <img src='${cfReq?.image?._publishUrl}' title='${cfReq?.title}'/>
     </div>
   </div>
 	`;

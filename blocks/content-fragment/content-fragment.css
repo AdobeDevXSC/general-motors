@@ -1,38 +1,50 @@
 .content-fragment .block {
-  background-color: #f8f8f8;
-  border-radius: 24px;
-  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.content-fragment .block .card-body-content {
-  padding: 48px 40px;
-}
-
-.content-fragment .block .card-body-content p {
-  font-size: 16px;
-  margin: 1.5rem 0;
-}
-
-.content-fragment .block .card-body-content p.cta-link {
-  margin-bottom: 0;
-}
-
-.content-fragment .block .card-body-content h4 {
+.content-fragment p {
   margin: 0;
-  font-size: 24px;
 }
 
-.content-fragment .block .card-body-image {
-  display: flex;
+.content-fragment .title {
+  font-size: 56px;
 }
 
-.content-fragment .block .card-body-image img {
-  width: 100%;
-  object-fit: cover;
+.content-fragment .description {
+  white-space: pre-line;
 }
 
-@media (width <= 1200px) {
-  .content-fragment-wrapper {
-    padding: 1rem !important;
+.content-fragment .card-body-image {
+  margin: 1rem 0;
+}
+
+.content-fragment .card-body-image img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.content-fragment a.button {
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+}
+
+.content-fragment a.button:hover {
+  text-decoration: underline;
+}
+
+
+@media (width <= 768px) {
+  .content-fragment .title {
+    font-size: 36px;
+  }
+
+  .content-fragment p {
+    font-size: 14px;
   }
 }
