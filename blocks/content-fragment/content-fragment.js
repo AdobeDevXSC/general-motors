@@ -41,8 +41,6 @@ export default async function decorate(block) {
     });
   const itemId = `urn:aemconnection:${contentPath}/jcr:content/data/${variationname}`;
 
-  console.log("cfReq: ", cfReq);
-
   block.setAttribute('data-aue-type', 'container');
   block.innerHTML = `
   <div class='block' data-aue-resource=${itemId} data-aue-label='Teaser' data-aue-type='reference' data-aue-filter='cf'>
