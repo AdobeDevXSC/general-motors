@@ -41,6 +41,8 @@ export default async function decorate(block) {
     });
   const itemId = `urn:aemconnection:${contentPath}/jcr:content/data/${variationname}`;
 
+  console.log("cfReq: ", cfReq);
+
   block.setAttribute('data-aue-type', 'container');
   block.innerHTML = `
   <div class='block' data-aue-resource=${itemId} data-aue-label='Teaser' data-aue-type='reference' data-aue-filter='cf'>
@@ -57,7 +59,7 @@ export default async function decorate(block) {
         <div data-aue-prop='image' data-aue-label='Image' data-aue-type='richtext' class='card-body-image'>
           <img src='${cfReq?.image?._publishUrl}' title='${cfReq?.title}'/>
         </div>
-        <p data-aue-prop='ctaUrl' data-aue-label='CTA' data-aue-type='text' class='cta-link'>
+        <p data-aue-prop='ctaLabel' data-aue-label='CTA' data-aue-type='text' class='cta-link'>
           <a class='button' href='${cfReq?.ctaUrl}' target='_blank'>${cfReq?.ctaLabel} &#8594;</a>
         </p>
     </div>
