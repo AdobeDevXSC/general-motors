@@ -60,7 +60,7 @@ export default async function decorate(block) {
           <img src='${cfReq?.image?._publishUrl}' title='${cfReq?.title}'/>
         </div>
         <p data-aue-prop='ctaLabel' data-aue-label='CTA' data-aue-type='text' class='cta-link'>
-          <a class='button' href='${cfReq?.ctaUrl}' target='_blank'>${cfReq?.ctaLabel} &#8594;</a>
+          <a class='button' href='${cfReq?.ctaUrl}' target='_blank'>${cfReq?.ctaLabel}</a>
         </p>
     </div>
   </div>
