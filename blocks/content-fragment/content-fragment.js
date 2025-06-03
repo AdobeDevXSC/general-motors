@@ -20,7 +20,7 @@ export default async function decorate(block) {
 
   block.innerHTML = ``;
 
-  // const isAuthor = isAuthorEnvironment();
+  const isAuthor = isAuthorEnvironment();
   // const url = window?.location?.origin?.includes('author')
   //   ? `${aemauthorurl}${persistedquery};path=${contentPath};variation=${variationname};ts=${
   //       Math.random() * 1000
