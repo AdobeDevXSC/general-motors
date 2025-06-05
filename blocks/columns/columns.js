@@ -5,14 +5,14 @@ export default function decorate(block) {
 
   block.querySelectorAll(':scope > div > div').forEach((col) => {
     col.classList.add('column');
-    const button = col.querySelector('.button-container a');
-    if (!button) return;
+    const link = col.querySelector('a');
+    if (!link) return;
 
     const anchor = document.createElement('a');
-    anchor.href = button.href;
+    anchor.href = link.href;
     anchor.className = 'column-link';
     
-    button.closest('.button-container')?.remove();
+    link.closest('p')?.remove();
     anchor.append(...col.childNodes);
     col.append(anchor);
   });
