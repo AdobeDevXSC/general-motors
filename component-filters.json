@@ -17,7 +17,26 @@
       "columns",
       "fragment",
       "multimedia-banner",
-      "content-fragment-teaser"
+      "content-fragment-teaser",
+      "accordion"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
+     "id": "accordion-item",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
+    "id": "card",
+    "components": [
+      "card"
     ]
   },
   {
