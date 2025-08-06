@@ -587,6 +587,7 @@ async function loadBlock(block) {
  * @param {Element} block The block element
  */
 function decorateBlock(block) {
+  console.log(block);
   const shortBlockName = block.classList[0];
   if (shortBlockName && !block.dataset.blockStatus) {
     block.classList.add('block');
@@ -608,6 +609,8 @@ function decorateBlock(block) {
  */
 function decorateBlocks(main) {
   main.querySelectorAll('div.section > div > div').forEach(decorateBlock);
+  // here
+  main.querySelectorAll('div.section > div > [data-component^="gmx-"]').forEach(decorateBlock);
 }
 
 /**
@@ -660,7 +663,8 @@ async function loadSection(section, loadCallback) {
   const status = section.dataset.sectionStatus;
   if (!status || status === 'initialized') {
     section.dataset.sectionStatus = 'loading';
-    const blocks = [...section.querySelectorAll('div.block')];
+    // here remove 'div'
+    const blocks = [...section.querySelectorAll('.block')];
     for (let i = 0; i < blocks.length; i += 1) {
       // eslint-disable-next-line no-await-in-loop
       await loadBlock(blocks[i]);
